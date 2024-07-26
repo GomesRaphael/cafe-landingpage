@@ -55,7 +55,9 @@ header ul {
     .esconder-no-mobile {
         display: none !important;
     }
+
 }
+
 
 .stats-section {
     flex-wrap: wrap;
@@ -424,12 +426,13 @@ footer {
     justify-content: space-between;
     width: 100%;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .will {
     flex-direction: column;
     display: flex;
-    flex: 1 1 100px;
+    flex: 1 1 200px;
     /* line-height: 32px; */
     gap: 4px 0px;
 }
@@ -449,21 +452,30 @@ footer {
 
 .redes {
     gap: 26px;
+    
 }
 
-.juninho-pai2 p{
+.juninho-pai2 {
     font-size:28px ;
     color: #eeeeee;
     padding: 20px 0px;
     font-family: "Playfair Display", serif;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+
 .input-container {
+    gap: 8px;
+    flex: 1 1 0px;
     display: flex;
+    max-width: 100%;
     align-items: center;
-    padding: 8px 8px 8px 24px;
+    padding: 16px;
     border-radius: 16px;
     background-color: rgb(62, 66, 70);
+    flex-wrap: wrap;
 }
 
 .email-icon {
@@ -471,14 +483,13 @@ footer {
 }
 
 input[type="email"] {
-    flex: 1;
-    padding: 10px;
-    margin: 0 10px;
+    flex: 999 1 0px;
+    padding: 16px;
     border: none;
     background-color: transparent;
     color: #e5e5e5;
     outline: none;
-    font-size: 16px;
+    font-size: 20px;
     box-sizing: border-box;
 }
 
@@ -487,9 +498,10 @@ input[type="email"] {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    width: 179px;
+    flex: 1 1 179px;
     height: 62px;
     border-radius: 8px;
+    max-width: 100%;
 }
 
 .input-button:hover {
