@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-family: "Playfair Display", serif; */
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --button: #6D1600;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Aqui estamos pegando a largura (Width) e calculando 100% da responsividade menos (-) os pixels (px) */
+.container {
+    width: calc(100% - 128px);
+    margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    gap: 32px;
+    padding: 0px 24px;
+}
+
+@media (max-width: 600px) {
+    header ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .catalog img {
+        width: 184px;
+        height: 264px;
+    }
+
+    .esconder-no-mobile {
+        display: none !important;
+    }
+}
+
+.stats-section {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 0px;
+    align-items: center;
+}
+
+.wallet-search {
+    display: flex;
+    gap: 8px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+.hero {
+    align-items: center;
+    size: 631px 348px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    display: flex;
+    text-align: center;
+}
+
+.hero button {
+    display: flex;
+    cursor: pointer;
+    background-color: var(--button);
+    width: 363px;
+    height: 82px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: white;
+    gap: 16px;
+    border-radius: 0px 32px;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+button {
+    transition: all .2s ease;
+}
+
+.catalog {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: start;
+    margin: 0 auto;
+    scroll-snap-type: x mandatory;
+    max-width: 100%;
+    scroll-padding: 64px;
+}
+
+.catalog img {
+    width: 216px;
+    height: 312px;
+    object-fit: contain;
+    scroll-snap-align: start;
+}
+
+.catalog img:first-child {
+    margin-left: 64px;
+}
+
+.catalog img:last-child {
+    margin-right: 64px;
+}
+
+.stats-section {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.stat {
+    border-inline-end: 1px solid;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 114px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.stat-number {
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+}
+
+.stat-description {
+    font-size: 24px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.title h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: #282A3A;
+    opacity: 56%;
+}
+
+.title p {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.buttons-box {
+    max-width: 100%;
+    width: 600px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-radius: 40px;
+    background-color: #eeeeee;
+}
+
+.buttons-box button {
+    flex: 1 0 100px;
+    cursor: pointer;
+    border-radius: 40px;
+    height: 61px;
+}
+
+.buttons-box p {
+    opacity: 56%;
+    font-size: 24px;
+}
+
+.buttons-box button:hover,
+.buttons-box button.ativo {
+    background-color: white;
+}
+
+.our-products {
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.card-wraper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.card-info {
+    padding: 16px 24px;
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+}
+
+.xique {
+    display: flex;
+    padding: 80px;
+    gap: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.xique-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button);
+    width: 280px;
+    height: 82px;
+    border-radius: 0px 32px;
+    gap: 16px;
+    font-size: 24px;
+    color: #eeeeee;
+    font-family: "Playfair Display", serif;
+}
+
+.lorem {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 0 1 500px;
+    font-size: 20px;
+    line-height: 1.1
+}
+
+.img-wraper {
+    display: flex;
+    gap: 24px;
+    max-width: 100%;
+    flex: 0 0 0;
+}
+
+.testimonial {
+    padding: 80px;
+    gap: 80px;
+}
+
+.wraper-review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog {
+    padding: 80px;
+    gap: 80px;
+}
+
+.blog-card-wraper {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    /* align-items: ; */
+}
+
+
+.blog-card {
+    padding: 16px;
+    border-radius: 0px 96px 0 48px;
+    border: 1px solid #00000066;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 16px;
+}
+
+
+.blog-card-image {
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.blog-card-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.blog-card-info>* {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.blog-card-description {
+    font-size: 24px;
+    line-height: 33.6px;
+    font-weight: 600;
+}
+
+.blog-card-links {
+    display: flex;
+    justify-content: end;
+}
+
+.blog-card-links a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 16px;
+    color: #282A3A;
+    font-weight: 500;
+}
+
+.blog-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button);
+    width: 280px;
+    height: 82px;
+    border-radius: 0px 32px;
+    gap: 16px;
+    font-size: 24px;
+    color: #eeeeee;
+    font-family: "Playfair Display", serif;
+}
+
+footer {
+    display: flex;
+    padding: 80px;
+    gap: 80px;
+    background-color: #282A3A;
+    flex-wrap: wrap;
+
+}
+
+.ngopi {
+    display: flex;
+    font-size: 20px;
+    gap: 32px;
+    align-items: start;
+    flex-direction: column;
+    width: 382px;
+    line-height: 32px;
+    color: #eeeeee;
+    flex: 1 1 auto;
+}
+
+.wraper-footer {
+    display: flex;
+    flex: 1 1 800px;
+    line-height: 50px;
+    flex-direction: column;
+}
+
+.juninho-pai {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 32px;
+}
+
+.will {
+    flex-direction: column;
+    display: flex;
+    flex: 1 1 100px;
+    /* line-height: 32px; */
+    gap: 4px 0px;
+}
+
+.will a {
+    /* padding: 4px 0px; */
+    font-size: 16px;
+    color: white;
+}
+
+.will p {
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    color: white;
+
+}
+
+.redes {
+    gap: 26px;
+}
+
+.juninho-pai2 p{
+    font-size:28px ;
+    color: #eeeeee;
+    padding: 20px 0px;
+    font-family: "Playfair Display", serif;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 24px;
+    border-radius: 16px;
+    background-color: rgb(62, 66, 70);
+}
+
+.email-icon {
+    display: flex;
+}
+
+input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    color: #e5e5e5;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-button {
+    background-color: #6D1600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 179px;
+    height: 62px;
+    border-radius: 8px;
+}
+
+.input-button:hover {
+    background-color: #a83228;
+}
