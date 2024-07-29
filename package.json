@@ -1,0 +1,22 @@
+{
+  "name": "gomes-cafe",
+  "version": "1.0.0",
+  "description": "Meu primeiro Projeto de Landingpage",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GomesRaphael/cafe-landingpage.git"
+  },
+  "author": "Raphael Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GomesRaphael/cafe-landingpage/issues"
+  },
+  "homepage": "https://github.com/GomesRaphael/cafe-landingpage#readme",
+  "dependencies": {
+    "swiper": "^11.1.8"
+  }
+}
