@@ -6,6 +6,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -33,6 +34,7 @@ main {
 .container {
     width: calc(100% - 128px);
     margin: 0 auto;
+    position: relative;
 }
 
 header ul {
@@ -56,15 +58,17 @@ header ul {
         display: none !important;
     }
 
+    
 }
 
 
-.stats-section {
+
+/* .stats-section {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .nav {
     display: flex;
@@ -77,6 +81,46 @@ header ul {
 .wallet-search {
     display: flex;
     gap: 8px;
+}
+
+.swiperCatalog {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+.swiperProdutos {
+    width: 1006px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.swiper-slide {
+    width: fit-content !important;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: var(--button);
+    height: 16px !important;
+    width: 16px !important;
+    padding: 10px;
+    border-radius: 99999999999999px 999999999999999px;
+    color: #f5f3f3 !important;
+    cursor: pointer;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 12px !important;
 }
 
 .hero h1 {
@@ -92,16 +136,20 @@ header ul {
     display: flex;
     justify-content: center;
     padding: 80px;
-}
-
-.hero {
     align-items: center;
     size: 631px 348px;
-    display: flex;
     flex-direction: column;
     gap: 24px;
-    display: flex;
     text-align: center;
+}
+
+.parallax {
+    background-image: url(https://th.bing.com/th/id/OIP.5fJ-cBJwDgCEWJrLdZtYSwHaNK?rs=1&pid=ImgDetMain);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero button {
@@ -154,34 +202,42 @@ button {
 .catalog img:last-child {
     margin-right: 64px;
 }
-
 .stats-section {
-    padding: 80px;
     display: flex;
-    justify-content: center;
-    gap: 24px;
-}
-
-.stat {
-    border-inline-end: 1px solid;
+    justify-content: space-around;
+    padding: 20px 0; /* Espaçamento entre as seções e a linha */
+    margin-top: 20px; /* Espaçamento acima da seção */
+    position: relative; /* Para posicionar o pseudo-elemento */
+  }
+  
+  .stat {
     display: flex;
     flex-direction: column;
-    width: 240px;
-    height: 114px;
     align-items: center;
-    justify-content: center;
-}
+    margin: 0 20px; /* Espaçamento entre as seções */
+  }
+  
+  .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .stat-description {
+    font-size: 14px;
+  }
+  
+  .stats-section::before {
+    content: "";
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical da linha */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Cor da linha */
+    opacity: 0.5; /* Opacidade da linha */
+    z-index: 1;
+  }
 
-
-
-.stat-number {
-    font-family: "Inter", sans-serif;
-    font-size: 64px;
-}
-
-.stat-description {
-    font-size: 24px;
-}
 
 .title {
     display: flex;
@@ -321,13 +377,21 @@ button {
     gap: 80px;
 }
 
-.blog-card-wraper {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    /* align-items: ; */
+.swiperBlog {
+    /* width: 12px; */
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
+
+/* .swiperBlog .swiper-slide:first-child{
+    padding-left: 50px;
+}
+
+.swiperBlog .swiper-slide:last-child{
+    padding-right: 50px;
+} */
 
 .blog-card {
     padding: 16px;
@@ -452,11 +516,11 @@ footer {
 
 .redes {
     gap: 26px;
-    
+
 }
 
 .juninho-pai2 {
-    font-size:28px ;
+    font-size: 28px;
     color: #eeeeee;
     padding: 20px 0px;
     font-family: "Playfair Display", serif;
@@ -506,4 +570,14 @@ input[type="email"] {
 
 .input-button:hover {
     background-color: #a83228;
+}
+
+.navbar-mobile{
+    top: 0;
+    left: 0;
+}
+
+
+.lorem-dialog{
+    
 }

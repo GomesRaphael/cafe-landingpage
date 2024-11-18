@@ -7,6 +7,7 @@
     <title>Gomes Café</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -36,8 +36,9 @@
             </div>
         </div>
     </header>
+
     <main class="">
-        <section class="container hero">
+        <section class="container hero ">
             <h1>Enjoy Your Favorite <br>
                 Coffee with Ngopi</h1>
             <p>Discover tranquility at Ngopi a sanctuary for unwinding, <br>
@@ -47,42 +48,42 @@
             </button>
         </section>
 
-        <section class="catalog">
+        <div class="catalog">
             <img src="imagens/catalog/Rectangle 1.png" alt="">
             <img src="imagens/catalog/Rectangle 2.png" alt="">
             <img src="imagens/catalog/Rectangle 3.png" alt="">
             <img src="imagens/catalog/Rectangle 4.png" alt="">
             <img src="imagens/catalog/Rectangle 5.png" alt="">
-        </section>
+        </div>
 
         <div class="stats-section">
             <div class="stat">
-                <span class="stat-number">30+</span>
-                <span class="stat-description">Coffee Variant</span>
+              <span class="stat-number">30+</span>
+              <span class="stat-description">Coffee Variant</span>
             </div>
             <div class="stat">
-                <span class="stat-number">20+</span>
-                <span class="stat-description">Meeting room</span>
+              <span class="stat-number">20+</span>
+              <span class="stat-description">Meeting room</span>
             </div>
             <div class="stat">
-                <span class="stat-number">25+</span>
-                <span class="stat-description">Event space</span>
+              <span class="stat-number">25+</span>
+              <span class="stat-description">Event space</span>
             </div>
             <div class="stat">
-                <span class="stat-number">40+</span>
-                <span class="stat-description">Global Achievement</span>
+              <span class="stat-number">40+</span>
+              <span class="stat-description">Global Achievement</span>
             </div>
-        </div>
+          </div>
     </main>
     <!-- CATALOGO -->
     <section class="our-products container">
-        <section class="container flex">
+        <div class="container flex">
             <div class="title">
                 <h1>Our products</h1>
                 <p>From Top Quality Materials</p>
             </div>
-        </section>
-        <section class="container flex">
+        </div>
+        <div class="container flex">
             <div class="buttons-box">
                 <button class="ativo">
                     <p>Arabica</p>
@@ -94,109 +95,129 @@
                     <p>Liberica</p>
                 </button>
             </div>
-        </section>
+        </div>
         <!-- WRAPER REVIEWS -->
-        <section class="card-wraper">
-            <div class="card" style=" width: 302px; height: 476px; ">
+        <!-- Slider main container -->
+        <div class="swiperProdutos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card" style=" width: 302px; height: 476px; ">
+                        <img src="imagens/card/Rectangle 1.png" alt="">
+                        <div class="card-info">
+                            <div>
+                                <p style="font-size: 24px;">Chocolate Latte</p>
+                            </div>
 
-                <img src="imagens/card/Rectangle 1.png" alt="">
-                <div class="card-info">
-                    <div>
-                        <p style="font-size: 24px;">Chocolate Latte</p>
-                    </div>
-
-                    <div class="star-review" style="display: flex; gap: 8px;">
-                        <div style="display: flex; gap: 4px;">
-                            <img src="imagens/card/Star 1.png" alt="">
-                            <p style="font-size: 20px; opacity:70% ;">4.9</p>
+                            <div class="star-review" style="display: flex; gap: 8px;">
+                                <div style="display: flex; gap: 4px;">
+                                    <img src="imagens/card/Star 1.png" alt="">
+                                    <p style="font-size: 20px; opacity:70% ;">4.9</p>
+                                </div>
+                                <p style="opacity: 72%;">(360 reviews)</p>
+                            </div>
+                            <div>
+                                <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit
+                                    amet <br>
+                                    consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
+                                <p style="font-size: 20px;">$2.9</p>
+                                <img src="imagens/card/Plus.png" alt="">
+                            </div>
                         </div>
-                        <p style="opacity: 72%;">(360 reviews)</p>
                     </div>
-                    <div>
-                        <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit amet <br>
-                            consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style=" width: 302px; height: 476px;">
+                        <img src="imagens/card/Rectangle 2.png" alt="">
+                        <div class="card-info">
+                            <div>
+                                <p style="font-size: 24px;">Mocha Latte</p>
+                            </div>
+                            <div class="star-review" style="display: flex; gap: 8px;">
+
+                                <div style="display: flex; gap: 4px;">
+                                    <img src="imagens/card/Star 1.png" alt="">
+                                    <p style="font-size: 20px; opacity:70% ;">5.0</p>
+                                </div>
+                                <p style="opacity: 72%;">(180 reviews)</p>
+                            </div>
+
+                            <div>
+                                <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit
+                                    amet <br>
+                                    consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
+                                <p style="font-size: 20px;">$2.7</p>
+                                <img src="imagens/card/Plus.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
-                        <p style="font-size: 20px;">$2.9</p>
-                        <img src="imagens/card/Plus.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style=" width: 302px; height: 476px;">
+                        <img src="imagens/card/Rectangle 3.png" alt="">
+
+                        <div class="card-info">
+                            <div>
+                                <p style="font-size: 24px;">Coffee Latte</p>
+                            </div>
+                            <div class="star-review" style="display: flex; gap: 8px;">
+                                <div style="display: flex; gap: 4px;">
+                                    <img src="imagens/card/Star 1.png" alt="">
+                                    <p style="font-size: 20px; opacity:70% ;">4.8</p>
+                                </div>
+                                <p style="opacity: 72%;">(450 reviews)</p>
+                            </div>
+                            <div>
+                                <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit
+                                    amet <br>
+                                    consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
+                                <p style="font-size: 20px;">$2.9</p>
+                                <img src="imagens/card/Plus.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style=" width: 302px; height: 476px;">
+                        <img src="imagens/card/Rectangle 4.png" alt="">
+
+                        <div class="card-info">
+                            <div>
+                                <p style="font-size: 24px;">Hazelnut Latte</p>
+                            </div>
+                            <div class="star-review" style="display: flex; gap: 8px;">
+                                <div style="display: flex; gap: 4px;">
+                                    <img src="imagens/card/Star 1.png" alt="">
+                                    <p style="font-size: 20px; opacity:70% ;">4.9</p>
+                                </div>
+                                <p style="opacity: 72%;">(390 reviews)</p>
+                            </div>
+                            <div>
+                                <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit
+                                    amet <br>
+                                    consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
+                                <p style="font-size: 20px;">$2.8</p>
+                                <img src="imagens/card/Plus.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card" style=" width: 302px; height: 476px;">
-                <img src="imagens/card/Rectangle 2.png" alt="">
-                <div class="card-info">
-                    <div>
-                        <p style="font-size: 24px;">Mocha Latte</p>
-                    </div>
-
-                    <div class="star-review" style="display: flex; gap: 8px;">
-
-                        <div style="display: flex; gap: 4px;">
-                            <img src="imagens/card/Star 1.png" alt="">
-                            <p style="font-size: 20px; opacity:70% ;">5.0</p>
-                        </div>
-                        <p style="opacity: 72%;">(180 reviews)</p>
-                    </div>
-
-                    <div>
-                        <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit amet <br>
-                            consectetur. Scelerisque urna vel sit dolor fringilla</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
-                        <p style="font-size: 20px;">$2.7</p>
-                        <img src="imagens/card/Plus.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="card" style=" width: 302px; height: 476px;">
-                <img src="imagens/card/Rectangle 3.png" alt="">
-
-                <div class="card-info">
-                    <div>
-                        <p style="font-size: 24px;">Coffee Latte</p>
-                    </div>
-                    <div class="star-review" style="display: flex; gap: 8px;">
-                        <div style="display: flex; gap: 4px;">
-                            <img src="imagens/card/Star 1.png" alt="">
-                            <p style="font-size: 20px; opacity:70% ;">4.8</p>
-                        </div>
-                        <p style="opacity: 72%;">(450 reviews)</p>
-                    </div>
-                    <div>
-                        <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit amet <br>
-                            consectetur. Scelerisque urna vel sit dolor fringilla</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
-                        <p style="font-size: 20px;">$2.9</p>
-                        <img src="imagens/card/Plus.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="card" style=" width: 302px; height: 476px;">
-                <img src="imagens/card/Rectangle 4.png" alt="">
-
-                <div class="card-info">
-                    <div>
-                        <p style="font-size: 24px;">Hazelnut Latte</p>
-                    </div>
-                    <div class="star-review" style="display: flex; gap: 8px;">
-                        <div style="display: flex; gap: 4px;">
-                            <img src="imagens/card/Star 1.png" alt="">
-                            <p style="font-size: 20px; opacity:70% ;">4.9</p>
-                        </div>
-                        <p style="opacity: 72%;">(390 reviews)</p>
-                    </div>
-                    <div>
-                        <p style="line-height: 22.4px; font-size: 16px; opacity: 72%;">Lorem ipsum dolor sit amet <br>
-                            consectetur. Scelerisque urna vel sit dolor fringilla</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; width: 254px; height: 24px;">
-                        <p style="font-size: 20px;">$2.8</p>
-                        <img src="imagens/card/Plus.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card-wraper">
+        </div>
     </section>
     <section class="container about-us">
         <div class="title-about title">
@@ -218,6 +239,12 @@
                     magni deserunt laboriosam voluptate beatae itaque provident perferendis iste, asperiores nostrum,
                     molestias cumque aut sint libero!</p>
                 <button class="xique-button">Read More <img src="imagens/ArrowDownRight.png" alt=""></button>
+                <dialog class="lorem-dialog">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis unde dolores voluptatem
+                        harum fugit aperiam deserunt, repellendus, quis sint id tenetur fugiat nisi, accusantium dolore
+                        obcaecati consectetur facilis ex.</p>
+                    <button>OK</button>
+                </dialog>
             </div>
             <div class="img-wraper esconder-no-mobile">
                 <img style="margin-top: 100px;" src="imagens/about us/frame 1.png" alt="">
@@ -253,7 +280,6 @@
             <div class="review-card" style="display: flex; flex-direction: column; gap: 16px; padding: 24px 40px;">
                 <div class="parte-de-cima" style=" display: flex; gap: 16px; align-items:center; gap: 16px;">
                     <img src="imagens/testimonial/Ellipse 2.png" alt="">
-
                     <div class="nome-e-estrelas" style="line-height: 24px;">
                         <p><b>Avril Song</b></p>
                         <img src="imagens/testimonial/Star 1.png" alt="">
@@ -297,6 +323,7 @@
             <p>Read our articles</p>
         </div>
         <div class="blog-card-wraper" style="display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;">
+            <!-- Slider main container -->
             <div class="blog-card">
                 <img class="blog-card-image" src="imagens/Blog/foto1.png" alt="">
                 <div class="blog-card-info">
@@ -309,29 +336,8 @@
                         <p>Feb 23, 2024</p>
                     </div>
                 </div>
-                <p class="blog-card-description">Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
-                </p>
-                <div class="blog-card-links">
-                    <a href="#" target="_blank">
-                        <span>View details</span>
-                        <img src="imagens/Blog/CaretRight.png" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <img class="blog-card-image" src="imagens/Blog/foto1.png" alt="">
-                <div class="blog-card-info">
-                    <div>
-                        <img src="imagens/Blog/Vector.png" alt="">
-                        <p>John Doe</p>
-                    </div>
-                    <div>
-                        <img src="imagens/Blog/Vector-data.png" alt="">
-                        <p>Feb 23, 2024</p>
-                    </div>
-                </div>
-                <p class="blog-card-description">Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+                <p class="blog-card-description">Lorem ipsum dolor sit amet consectetur. Est tempor morbi
+                    pellentesque.
                 </p>
                 <div class="blog-card-links">
                     <a href="#" target="_blank">
@@ -352,7 +358,30 @@
                         <p>Feb 23, 2024</p>
                     </div>
                 </div>
-                <p class="blog-card-description">Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+                <p class="blog-card-description">Lorem ipsum dolor sit amet consectetur. Est tempor morbi
+                    pellentesque.
+                </p>
+                <div class="blog-card-links">
+                    <a href="#" target="_blank">
+                        <span>View details</span>
+                        <img src="imagens/Blog/CaretRight.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img class="blog-card-image" src="imagens/Blog/foto1.png" alt="">
+                <div class="blog-card-info">
+                    <div>
+                        <img src="imagens/Blog/Vector.png" alt="">
+                        <p>John Doe</p>
+                    </div>
+                    <div>
+                        <img src="imagens/Blog/Vector-data.png" alt="">
+                        <p>Feb 23, 2024</p>
+                    </div>
+                </div>
+                <p class="blog-card-description">Lorem ipsum dolor sit amet consectetur. Est tempor morbi
+                    pellentesque.
                 </p>
                 <div class="blog-card-links">
                     <a href="#" target="_blank">
@@ -399,7 +428,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="juninho-pai2">
                 <P>Subscribe</P>
                 <div class="input-container">
@@ -410,6 +438,8 @@
             </div>
         </div>
     </footer>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
